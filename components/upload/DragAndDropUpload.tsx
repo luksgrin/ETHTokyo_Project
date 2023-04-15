@@ -40,7 +40,7 @@ function DragDrop({authSig}: {authSig: any}) {
   const handleChange = (file: React.SetStateAction<null>) => {
     setFile(file);
     getBase64(file, async (base64encoded) => {
-        const ipfsCid = await encrypt(authSig, acc('ethereum'), 'ethereum', base64encoded, client);
+        const ipfsCid = await encrypt(authSig, acc('ethereum', 'vitalik.lens', '0xf12D31b798dB234C55d9b50c3854F99dB6BddAea'), 'ethereum', base64encoded, client);
         console.log({file, base64encoded, ipfsCid});
     })
   };
