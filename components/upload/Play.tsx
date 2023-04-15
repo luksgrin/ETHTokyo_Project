@@ -39,19 +39,9 @@ const Home: NextPage = () => {
           <span className="Title__Song">Play Song</span>
         </h1>
         <p className="Text__Content">
-          <span>Experience seamless music streaming with Play Protect: </span>
           <ol className="List__Content">
-            <li>Fans sign a message to authenticate their address.</li>
             <li>
-              If the access control conditions are met, Lit Protocol nodes
-              return BLS shares.
-            </li>
-            <li>
-              The encryption key is formed, decrypting the media client-side.
-            </li>
-            <li>
-              Fans can now enjoy streaming their favorite artist's work in a
-              secure and decentralized manner.
+              Enjoy the music from your favorite artists if you are eligible
             </li>
           </ol>
         </p>

@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import HeroImage from "../components/hero-image/hero";
 import Upload from "../components/upload/Upload";
 import Play from "../components/upload/Play";
-import How from "../components/hero-image/how.gif";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -23,34 +22,35 @@ const Home: NextPage = () => {
             <span className="Title__Song">Welcome to Play Protect</span>
           </h1>
           <p className="Text__Content">
-            Play Protect is revolutionizing the way artists distribute and
-            protect their music, empowering them with a decentralized and secure
-            platform. By offering customizable access control conditions and
-            utilizing innovative technologies like IPFS and Lit Protocol, Play
-            Protect is shaping the future of the music industry for artists and
-            fans alike.
+            Play Protect is{" "}
+            <span className="bold">
+              revolutionizing the way artists distribute and protect their music
+            </span>
+            , empowering them with a{" "}
+            <span className="bold">decentralized and secure platform.</span>
           </p>
 
           <div className={styles.grid + " MainPage__Grid"}>
-            <span>
+            <p>
               Join the New Era of Creativity with Play Protect, where artists
-              can easily upload music files to IPFS, set custom access
-              conditions, and enable fans to stream or download music by meeting
-              these conditions.
-            </span>
+              can easily{" "}
+              <span className="bold">
+                upload music files to IPFS, set custom access conditions, and
+                enable fans to stream or download music
+              </span>{" "}
+              by meeting some Lit conditions.
+            </p>
             <a className={styles.card} href="#encrypt__section">
               <h2>Upload your music &rarr;</h2>
-              <p>
-                Bring to the New Era your most innovative music and organize it
-                with Lit Protocol.
-              </p>
+              <p>Show the world your art! </p>
             </a>
             <a className={styles.card} href="#decrypt__section">
               <h2>Listen to music &rarr;</h2>
-              <p>
+              <p> Let's discover something 👀</p>
+              {/* <p>
                 Enjoy the newest music of your favorites artists, you just need
                 to be valid by the conditions the artist create{" "}
-              </p>
+              </p> */}
             </a>
           </div>
         </div>
@@ -66,26 +66,29 @@ const Home: NextPage = () => {
           </h1>
 
           <p className="Text__Content">
-            <span>
-              Play Protect enables artists to store their music securely on
-              IPFS:
-            </span>
             <ol className="List__Content">
               <li>
-                Artists upload their encrypted MP3 files using the platform's
-                UI.
+                1 - Music files are{" "}
+                <span className="bold">encrypted using Lit Protocol's </span>{" "}
+                SDK and threshold encryption scheme.
               </li>
               <li>
-                Music files are encrypted using Lit Protocol's SDK and threshold
-                encryption scheme.
+                2 - <span className="bold">Encrypted music</span> is published
+                on IPFS,{" "}
+                <span className="bold">
+                  protecting the artist's intellectual property.
+                </span>
               </li>
               <li>
-                Encrypted music is published on IPFS, protecting the artist's
-                intellectual property.
+                3 -{" "}
+                <span className="bold">
+                  Artists retain full control over their work
+                </span>
+                , setting conditions for decryption and playback.
               </li>
               <li>
-                Artists retain full control over their work, setting conditions
-                for decryption and playback.
+                4 - Users that pass the conditions will be{" "}
+                <span className="bold">able to decrypt and playback</span>
               </li>
             </ol>
           </p>
@@ -98,23 +101,29 @@ const Home: NextPage = () => {
           <p className="Text__Content">
             <ol className="List__Content">
               <li>
-                NextJS serves as the framework for building the user interface.
+                - <span className="bold">NextJS</span> serves as the framework
+                for building the user interface.
               </li>
               <li>
-                Lit Protocol SDK and its underlying threshold encryption scheme
-                encrypt music files.
+                - <span className="bold">Lit Protocol SDK</span> and its
+                underlying threshold encryption scheme encrypt music files.
               </li>
               <li>
-                IPFS, a decentralized storage solution, hosts the encrypted
-                music files.
+                - <span className="bold">IPFS</span>, a decentralized storage
+                solution, hosts the encrypted music files.
               </li>
               <li>
-                Access control conditions and Lit Actions enable customizable
-                decryption and playback conditions.
+                -Access control conditions and{" "}
+                <span className="bold">Lit Actions</span> enable{" "}
+                <span className="bold">
+                  customizable decryption and playback conditions.
+                </span>
               </li>
               <li>
-                BLS shares are returned by Lit Protocol nodes to form the
-                decryption key, allowing client-side decryption and playback.
+                - <span className="bold">BLS shares</span> are returned by Lit
+                Protocol nodes to form the
+                <span className="bold">decryption key</span>, allowing
+                client-side decryption and playback.
               </li>
             </ol>
           </p>
