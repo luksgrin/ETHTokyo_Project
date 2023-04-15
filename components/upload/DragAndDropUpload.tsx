@@ -40,7 +40,11 @@ function DragDrop({authSig}: {authSig: any}) {
   const handleChange = (file: React.SetStateAction<null>) => {
     setFile(file);
     getBase64(file, async (base64encoded) => {
-        const ipfsCid = await encrypt(authSig, acc('ethereum', 'vitalik.lens', '0xcbc9dd04153508782b444e3255a9663e9a9953ca'), 'ethereum', base64encoded, client);
+
+        // Use this one for the case of complex auth with LitAction
+        // const ipfsCid = await encrypt(authSig, acc('ethereum', 'vitalik.lens', '0xcbc9dd04153508782b444e3255a9663e9a9953ca'), 'ethereum', base64encoded, client);
+        const ipfsCid = await encrypt(authSig, acc('ethereum'), 'ethereum', base64encoded, client);
+
         console.log({file, base64encoded, ipfsCid});
     })
   };
@@ -49,8 +53,24 @@ function DragDrop({authSig}: {authSig: any}) {
   );
 }
 
+// Minimal example that always works
+export const acc =  (chain: string) => [{
+  contractAddress: '',
+  standardContractType: '',
+  chain: chain,
+  method: 'eth_getBalance',
+  parameters: [':userAddress', 'latest'],
+  returnValueTest: {
+    comparator: '>=',
+    value: '0',
+  },
+},];
+
+/* Our complex access control condition with LitAction. Dunno why it won't return `true`.
+Commenting it for now... 
+
 export const acc =  (chain: string, handle: string, followerAddress: string) => [{
-        contractAddress: 'QmZazCGM3SbAmzZsL1bg4doyBCbExfeF9DXuFtzBy6eymZ',
+        contractAddress: 'QmZazCGM3SbAmzZsL1bg4doyBCbExfeF9DXuFtzBy6eymZ', // CID of queryDoesFollowLens.js
         standardContractType: 'LitAction',
         chain: chain,
         method: 'go',
@@ -60,5 +80,5 @@ export const acc =  (chain: string, handle: string, followerAddress: string) => 
           value: 'true',
         },
     },];
-
+*/
 export default DragDrop;
