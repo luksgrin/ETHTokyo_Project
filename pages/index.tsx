@@ -26,12 +26,12 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <a className={styles.card} href="https://rainbowkit.com">
+          <a className={styles.card} href="#encrypt__section">
             <h2>Use case 1 &rarr;</h2>
             <p>Encrypt your music</p>
           </a>
 
-          <a className={styles.card} href="https://wagmi.sh">
+          <a className={styles.card} href="#decrypt__section">
             <h2>Use case 2 &rarr;</h2>
             <p>Decrypt and play your music</p>
           </a>
