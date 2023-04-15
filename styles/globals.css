@@ -67,7 +67,7 @@ main {
 .audio-player button {
   cursor: pointer;
   background-color: #1db954;
-  color: white;
+  color: #e2e2e2;
   border: none;
   border-radius: 50%;
   width: 50px;

@@ -139,6 +139,7 @@ const Home: NextPage = () => {
           href="https://www.ethglobal.com"
           rel="noopener noreferrer"
           target="_blank"
+          className="text-white"
         >
           Made with ❤️ at ETHGlobal Tokyo
         </a>

@@ -26,8 +26,8 @@ export default function HeroImage() {
               />
             </p>
             <div className="text-white">
-              <h1 className="mb-3">Play Protect</h1>
-              <h4 className="mb-3">
+              <h1 className="">Play Protect</h1>
+              <h4 className="">
                 Empowering Artists and Revolutionizing the Music Industry
               </h4>
               {/* <a
