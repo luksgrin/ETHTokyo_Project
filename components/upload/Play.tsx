@@ -36,7 +36,11 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className="Card Audio__Container">
         <h1 className={styles.title}>Play Song</h1>
-
+        <p className="Text__Song">
+          Try our amazing song stored at IPFS which only some amazing owners can
+          hear due to our restrictions (Text for testing and therefore being
+          able to fixe heights and stuff)
+        </p>
         <div className={""}>
           <audio controls src={mediaSrc as string} />
         </div>

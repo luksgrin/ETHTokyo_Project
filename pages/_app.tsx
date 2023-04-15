@@ -21,7 +21,7 @@ const { chains, provider, webSocketProvider } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "Tokyo Sounds",
+  appName: "Play Protect",
   projectId: "YOUR_PROJECT_ID",
   chains,
 });

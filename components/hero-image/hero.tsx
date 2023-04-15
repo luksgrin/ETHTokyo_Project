@@ -17,9 +17,9 @@ export default function HeroImage() {
             <ConnectButton />
           </div>
 
-          <div className="d-flex justify-content-center align-items-center h-100 Hero__MainContent">
+          <div className="d-flex justify-conteant-center aliagn-items-center h-100 Hero__MainContent">
             <div className="text-white">
-              <h1 className="mb-3">Tokyo Sounds</h1>
+              <h1 className="mb-3">Play Protect</h1>
               <h4 className="mb-3">Content Creator Wards</h4>
               {/* <a
                 className="btn btn-outline-light btn-lg"
