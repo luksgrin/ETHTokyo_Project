@@ -46,6 +46,18 @@ const Home: NextPage = () => {
         <div id="decrypt__section" className="Sections Content__1">
           <Play></Play>
         </div>
+        <div id="how__section" className="Sections Content__1">
+          <h1 className={styles.title}>
+            <span className="Title__Song">So how does this works...?</span>
+          </h1>
+
+          <p className="Text__Content">
+            How this works at the end explained with LOREM IPSUM LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM
+            IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+          </p>
+          <img alt="some use cases image"></img>
+        </div>
       </main>
 
       <footer className={styles.footer}>
