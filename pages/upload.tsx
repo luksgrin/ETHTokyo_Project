@@ -3,35 +3,40 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import DragAndDropUpload from '../components/upload/DragAndDropUpload';
+import { useLitClient } from '../hooks/useLitClient';
+import { useAuthSig } from '../hooks/useAuthSig';
 
 const Home: NextPage = () => {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Upload Media</title>
-        <link href="/favicon.ico" rel="icon" />
-      </Head>
+    const client = useLitClient({ chain: "ethereum" });
 
-      <main className={styles.main}>
-        <ConnectButton />
+    useAuthSig();
+    return (
+        <div className={styles.container}>
+            <Head>
+                <title>Upload Media</title>
+                <link href="/favicon.ico" rel="icon" />
+            </Head>
 
-        <h1 className={styles.title}>
-            Upload your song
-        </h1>
+            <main className={styles.main}>
+                <ConnectButton />
 
-        <p className={styles.description}>
-            <DragAndDropUpload />
-        </p>
+                <h1 className={styles.title}>
+                    Upload your song
+                </h1>
 
-      </main>
+                <p className={styles.description}>
+                    <DragAndDropUpload />
+                </p>
 
-      <footer className={styles.footer}>
-        <a href="https://rainbow.me" rel="noopener noreferrer" target="_blank">
-          Made with ❤️ at ETHGlobal Tokyo
-        </a>
-      </footer>
-    </div>
-  );
+            </main>
+
+            <footer className={styles.footer}>
+                <a href="https://www.ethglobal.com" rel="noopener noreferrer" target="_blank">
+                    Made with ❤️ at ETHGlobal Tokyo
+                </a>
+            </footer>
+        </div>
+    );
 };
 
 export default Home;
