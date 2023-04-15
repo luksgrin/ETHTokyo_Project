@@ -27,7 +27,9 @@ export default function HeroImage() {
             </p>
             <div className="text-white">
               <h1 className="mb-3">Play Protect</h1>
-              <h4 className="mb-3">Content Creator Wards</h4>
+              <h4 className="mb-3">
+                Empowering Artists and Revolutionizing the Music Industry
+              </h4>
               {/* <a
                 className="btn btn-outline-light btn-lg"
                 href="#!"

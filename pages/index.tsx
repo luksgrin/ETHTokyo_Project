@@ -23,20 +23,31 @@ const Home: NextPage = () => {
             <span className="Title__Song">Welcome to Play Protect</span>
           </h1>
           <p className="Text__Content">
-            So we do 2 things, basically + all the logic behidn LOREM IPSUM
-            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM
-            IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            Play Protect is revolutionizing the way artists distribute and
+            protect their music, empowering them with a decentralized and secure
+            platform. By offering customizable access control conditions and
+            utilizing innovative technologies like IPFS and Lit Protocol, Play
+            Protect is shaping the future of the music industry for artists and
+            fans alike.
           </p>
 
           <div className={styles.grid + " MainPage__Grid"}>
+            Join the New Era of Creativity with Play Protect, where artists can
+            easily upload music files to IPFS, set custom access conditions, and
+            enable fans to stream or download music by meeting these conditions.
             <a className={styles.card} href="#encrypt__section">
-              <h2>Use case 1 &rarr;</h2>
-              <p>Encrypt your music</p>
+              <h2>Upload your music &rarr;</h2>
+              <p>
+                Bring to the New Era your most innovative music and organize it
+                with Lit Protocol.
+              </p>
             </a>
-
             <a className={styles.card} href="#decrypt__section">
-              <h2>Use case 2 &rarr;</h2>
-              <p>Decrypt and play your music</p>
+              <h2>Listen to music &rarr;</h2>
+              <p>
+                Enjoy the newest music of your favorites artists, you just need
+                to be valid by the conditions the artist create{" "}
+              </p>
             </a>
           </div>
         </div>
@@ -52,18 +63,54 @@ const Home: NextPage = () => {
           </h1>
 
           <p className="Text__Content">
-            How this works at the end explained with LOREM IPSUM LOREM IPSUM
-            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM
-            IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            Play Protect enables artists to store their music securely on IPFS:
+            <ol className="List__Content">
+              <li>
+                Artists upload their encrypted MP3 files using the platform's
+                UI.
+              </li>
+              <li>
+                Music files are encrypted using Lit Protocol's SDK and threshold
+                encryption scheme.
+              </li>
+              <li>
+                Encrypted music is published on IPFS, protecting the artist's
+                intellectual property.
+              </li>
+              <li>
+                Artists retain full control over their work, setting conditions
+                for decryption and playback.
+              </li>
+            </ol>
           </p>
           <p className="Image__Content">
             <img src="/images/how.gif" alt="How is this done" />
           </p>
 
           <p className="Text__Content">
-            How this works at the end explained with LOREM IPSUM LOREM IPSUM
-            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM
-            IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            The Play Protect platform leverages cutting-edge technologies to
+            provide a seamless user experience:
+            <ol className="List__Content">
+              <li>
+                NextJS serves as the framework for building the user interface.
+              </li>
+              <li>
+                Lit Protocol SDK and its underlying threshold encryption scheme
+                encrypt music files.
+              </li>
+              <li>
+                IPFS, a decentralized storage solution, hosts the encrypted
+                music files.
+              </li>
+              <li>
+                Access control conditions and Lit Actions enable customizable
+                decryption and playback conditions.
+              </li>
+              <li>
+                BLS shares are returned by Lit Protocol nodes to form the
+                decryption key, allowing client-side decryption and playback.
+              </li>
+            </ol>
           </p>
 
           <p className="Image__Content">
