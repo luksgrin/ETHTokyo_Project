@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           <code className={styles.code}>pages/index.tsx</code> */}
           </p>
 
-          <div className={styles.grid}>
+          <div className={styles.grid + " MainPage__Grid"}>
             <a className={styles.card} href="#encrypt__section">
               <h2>Use case 1 &rarr;</h2>
               <p>Encrypt your music</p>

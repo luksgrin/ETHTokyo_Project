@@ -14,8 +14,15 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <ConnectButton />
-      <h1 className={styles.title}>Upload your song</h1>
-
+      <h1 className={styles.title}>
+        <span className="Title__Song">Upload your Song</span>
+      </h1>
+      <p className="Text__Song">
+        Upload your song to IPFS LOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM
+        IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM LOREM
+        IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM IPSUM
+        LOREM IPSUMLOREM IPSUM
+      </p>
       <p className={styles.description}>
         <DragAndDropUpload authSig={sig} />
       </p>

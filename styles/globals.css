@@ -191,6 +191,10 @@ main {
   margin: 2.5rem 1rem;
 }
 
+.MainPage__Grid {
+  margin: auto;
+}
+
 /* .Content.Content__1 {
   background: rgb(24, 26, 27);
   background: linear-gradient(
