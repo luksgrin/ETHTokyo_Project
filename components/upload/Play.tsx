@@ -38,12 +38,8 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           <span className="Title__Song">Play Song</span>
         </h1>
-        <p className="Text__Content">
-          <ol className="List__Content">
-            <li>
-              Enjoy the music from your favorite artists if you are eligible
-            </li>
-          </ol>
+        <p className="Text__Content text-center">
+          Enjoy the music from your favorite artists if you are eligible
         </p>
         <div className={""}>
           <audio controls src={mediaSrc as string} />

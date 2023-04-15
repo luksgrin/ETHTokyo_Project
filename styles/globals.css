@@ -158,6 +158,10 @@ li {
   list-style-type: none !important;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 .List__Content > * {
   line-height: 1.6;
   margin-bottom: 0.5rem;
