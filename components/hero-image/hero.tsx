@@ -18,6 +18,13 @@ export default function HeroImage() {
           </div>
 
           <div className="d-flex justify-conteant-center aliagn-items-center h-100 Hero__MainContent">
+            <p className="Image__LogoContainer">
+              <img
+                className="Image__Logo"
+                src="/images/logo.png"
+                alt="PlayProtect"
+              />
+            </p>
             <div className="text-white">
               <h1 className="mb-3">Play Protect</h1>
               <h4 className="mb-3">Content Creator Wards</h4>
