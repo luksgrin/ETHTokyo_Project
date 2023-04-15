@@ -1,9 +1,9 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import { useLitClient } from "../hooks/useLitClient";
-import { useAuthSig } from "../hooks/useAuthSig";
+import styles from "../../styles/Home.module.css";
+import { useLitClient } from "../../hooks/useLitClient";
+import { useAuthSig } from "../../hooks/useAuthSig";
 import * as LitJsSdk from "@lit-protocol/lit-node-client";
 import { useEffect, useState } from "react";
 
@@ -34,30 +34,13 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Play Media</title>
-        <link href="/favicon.ico" rel="icon" />
-      </Head>
+      <div className="Card Audio__Container">
+        <h1 className={styles.title}>Play Song</h1>
 
-      <main className={styles.main}>
-        <div className={"Card Audio__Container"}>
-          <h1 className={styles.title}>Play Song</h1>
-
-          <div className={""}>
-            <audio controls src={mediaSrc as string} />
-          </div>
+        <div className={""}>
+          <audio controls src={mediaSrc as string} />
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://www.ethglobal.com"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Made with ❤️ at ETHGlobal Tokyo
-        </a>
-      </footer>
+      </div>
     </div>
   );
 };

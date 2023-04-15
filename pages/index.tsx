@@ -3,6 +3,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import HeroImage from "../components/hero-image/hero";
+import Upload from "../components/upload/Upload";
+import Play from "../components/upload/Play";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -33,6 +35,13 @@ const Home: NextPage = () => {
             <h2>Use case 2 &rarr;</h2>
             <p>Decrypt and play your music</p>
           </a>
+        </div>
+
+        <div id="encrypt__section" className="Sections">
+          <Upload></Upload>
+        </div>
+        <div id="decrypt__section" className="Sections">
+          <Play></Play>
         </div>
       </main>
 

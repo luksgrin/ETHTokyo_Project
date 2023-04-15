@@ -128,6 +128,11 @@ main {
   padding: 2rem 1rem;
   border-radius: 12px;
   border: 1px solid #ccc;
-  min-width: 300px;
+  min-width: 60%;
   /* background: #ccc; */
+}
+
+.Sections {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
