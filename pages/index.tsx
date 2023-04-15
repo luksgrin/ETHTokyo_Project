@@ -21,32 +21,13 @@ const Home: NextPage = () => {
           <h1 className={styles.title}>
             <span className="Title__Song">Welcome to Play Protect</span>
           </h1>
-          <p className="Text__Content">
-            Play Protect is{" "}
-            <span className="bold">
-              revolutionizing the way artists distribute and protect their music
-            </span>
-            , empowering them with a{" "}
-            <span className="bold">decentralized and secure platform.</span>
-          </p>
 
           <div className={styles.grid + " MainPage__Grid"}>
-            <p>
-              Join the New Era of Creativity with Play Protect, where artists
-              can easily{" "}
-              <span className="bold">
-                upload music files to IPFS, set custom access conditions, and
-                enable fans to stream or download music
-              </span>{" "}
-              by meeting some Lit conditions.
-            </p>
             <a className={styles.card} href="#encrypt__section">
-              <h2>Upload your music &rarr;</h2>
-              <p>Show the world your art! </p>
+              <h2>Upload and encrypt your music &rarr;</h2>
             </a>
             <a className={styles.card} href="#decrypt__section">
               <h2>Listen to music &rarr;</h2>
-              <p> Let's discover something 👀</p>
               {/* <p>
                 Enjoy the newest music of your favorites artists, you just need
                 to be valid by the conditions the artist create{" "}
@@ -62,7 +43,7 @@ const Home: NextPage = () => {
         </div>
         <div id="how__section" className="Sections Content__1">
           <h1 className={styles.title}>
-            <span className="Title__Song">So how does this works...?</span>
+            <span className="Title__Song">So how does this work...?</span>
           </h1>
 
           <p className="Text__Content">

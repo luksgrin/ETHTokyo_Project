@@ -28,7 +28,7 @@ export default function HeroImage() {
             <div className="text-white">
               <h1 className="">Play Protect</h1>
               <h4 className="">
-                Empowering Artists and Revolutionizing the Music Industry
+                Digital Rights Management with Threshold Encryption
               </h4>
               {/* <a
                 className="btn btn-outline-light btn-lg"
