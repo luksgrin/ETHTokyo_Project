@@ -6,13 +6,12 @@ const clients: { [chain: string]: any} = {};
 
 export const useLitClient = ({chain}: { chain: string}) => {
     const provider = useProvider({chainId: chain == 'ethereum' ? 1 : 1});
-    const [connected, setConnected] = useState(false);
-    const [_client, setClient] = useState(null);
+    const [_client, setClient] = useState<LitJsSdk.LitNodeClient | null>(null);
     if (clients[chain]) return clients[chain];
 
-    const client = new LitJsSdk.LitNodeClient({});
+    const client = new LitJsSdk.LitNodeClient({provider});
     clients[chain] = client;
-    client.connect().then((client) => setClient(client));
+    client.connect().then((client: LitJsSdk.LitNodeClient) => setClient(client));
 
     return _client;
 
