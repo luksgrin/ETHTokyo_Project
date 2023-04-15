@@ -49,15 +49,15 @@ function DragDrop({authSig}: {authSig: any}) {
   );
 }
 
-export const acc =  (chain: string) => [{
-        contractAddress: '',
-        standardContractType: '',
+export const acc =  (chain: string, handle: string, followerAddress: string) => [{
+        contractAddress: 'QmZazCGM3SbAmzZsL1bg4doyBCbExfeF9DXuFtzBy6eymZ',
+        standardContractType: 'LitAction',
         chain: chain,
-        method: 'eth_getBalance',
-        parameters: [':userAddress', 'latest'],
+        method: 'go',
+        parameters: [handle, followerAddress],
         returnValueTest: {
-        comparator: '>=',
-        value: '0',
+          comparator: '=',
+          value: 'true',
         },
     },];
 
