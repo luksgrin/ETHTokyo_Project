@@ -13,7 +13,8 @@ const Home: NextPage = () => {
     const sig = useAuthSig();
 
     const [mediaSrc, setMediaSrc] = useState<string | Uint8Array | null>(null);
-  
+
+    // todo: grab cid from NFT
 
     const decrypt = async () => {
         const decryptedString = await LitJsSdk.decryptFromIpfs({
@@ -35,7 +36,7 @@ const Home: NextPage = () => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Upload Media</title>
+                <title>Play Media</title>
                 <link href="/favicon.ico" rel="icon" />
             </Head>
 
