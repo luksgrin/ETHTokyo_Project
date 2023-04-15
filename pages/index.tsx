@@ -56,7 +56,9 @@ const Home: NextPage = () => {
             LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM
             IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
           </p>
-          <img alt="some use cases image"></img>
+          <p className="Image__Content">
+            <img alt="some use cases image"></img>
+          </p>
         </div>
       </main>
 

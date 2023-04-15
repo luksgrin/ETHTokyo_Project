@@ -206,6 +206,13 @@ main {
   margin-right: auto;
 }
 
+.Image__Content {
+  justify-content: center !important;
+  align-items: center;
+  text-align: center;
+  object-fit: cover;
+}
+
 /* .Content.Content__1 {
   background: rgb(24, 26, 27);
   background: linear-gradient(
