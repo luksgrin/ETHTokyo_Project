@@ -152,8 +152,9 @@ main {
   /* margin-bottom: 1rem; */
 }
 .Image__Logo {
-  max-width: 84px;
+  max-width: 78px;
   margin-right: 1.1rem;
+  margin-top: 6px;
 }
 .Sections,
 .Content {
