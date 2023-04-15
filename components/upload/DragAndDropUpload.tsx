@@ -50,7 +50,7 @@ function DragDrop({authSig}: {authSig: any}) {
 }
 
 export const acc =  (chain: string, handle: string, followerAddress: string) => [{
-        contractAddress: '', // Ipfs cid of the code
+        contractAddress: 'QmZazCGM3SbAmzZsL1bg4doyBCbExfeF9DXuFtzBy6eymZ',
         standardContractType: 'LitAction',
         chain: chain,
         method: 'go',
