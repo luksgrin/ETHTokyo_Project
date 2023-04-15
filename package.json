@@ -12,6 +12,7 @@
     "@lit-protocol/lit-node-client": "^2.1.118",
     "@rainbow-me/rainbowkit": "^0.12.8",
     "ethers": "^5.5.1",
+    "mdb-react-ui-kit": "^6.0.0",
     "next": "^12.1.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",

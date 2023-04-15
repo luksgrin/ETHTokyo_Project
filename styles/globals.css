@@ -1,9 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
 }
 
 a {
@@ -13,4 +18,116 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.Hero__ConnectButton {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.Hero__ConnectButton div {
+  justify-content: end;
+}
+
+.Hero__MainContent {
+  margin-top: -4rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* AudioPlayer.css */
+.audio-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.audio-player button {
+  cursor: pointer;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  font-size: 14px;
+}
+
+.audio-player input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+
+.audio-player input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #1db954;
+  cursor: pointer;
+}
+
+.audio-player input[type="range"]::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #1db954;
+  cursor: pointer;
+}
+
+.audio-player input[type="range"]::-ms-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #1db954;
+  cursor: pointer;
+}
+
+.audio-player input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 5px;
+}
+
+.audio-player input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 5px;
+}
+
+.audio-player input[type="range"]::-ms-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 5px;
+}
+
+.audio-player .time {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.audio-player .volume {
+  font-size: 14px;
+}
+
+.Audio__Container {
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  min-width: 300px;
+  /* background: #ccc; */
 }
