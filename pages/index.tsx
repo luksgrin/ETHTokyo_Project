@@ -32,9 +32,12 @@ const Home: NextPage = () => {
           </p>
 
           <div className={styles.grid + " MainPage__Grid"}>
-            Join the New Era of Creativity with Play Protect, where artists can
-            easily upload music files to IPFS, set custom access conditions, and
-            enable fans to stream or download music by meeting these conditions.
+            <span>
+              Join the New Era of Creativity with Play Protect, where artists
+              can easily upload music files to IPFS, set custom access
+              conditions, and enable fans to stream or download music by meeting
+              these conditions.
+            </span>
             <a className={styles.card} href="#encrypt__section">
               <h2>Upload your music &rarr;</h2>
               <p>
@@ -63,7 +66,10 @@ const Home: NextPage = () => {
           </h1>
 
           <p className="Text__Content">
-            Play Protect enables artists to store their music securely on IPFS:
+            <span>
+              Play Protect enables artists to store their music securely on
+              IPFS:
+            </span>
             <ol className="List__Content">
               <li>
                 Artists upload their encrypted MP3 files using the platform's
@@ -86,10 +92,10 @@ const Home: NextPage = () => {
           <p className="Image__Content">
             <img src="/images/how.gif" alt="How is this done" />
           </p>
-
+          <h1 className={styles.title}>
+            <span className="Title__Song">Some Architecture</span>
+          </h1>
           <p className="Text__Content">
-            The Play Protect platform leverages cutting-edge technologies to
-            provide a seamless user experience:
             <ol className="List__Content">
               <li>
                 NextJS serves as the framework for building the user interface.

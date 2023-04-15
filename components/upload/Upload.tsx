@@ -17,7 +17,9 @@ const Home: NextPage = () => {
         <span className="Title__Song">Upload your Song</span>
       </h1>
       <p className="Text__Content">
-        Play Protect enables artists to store their music securely on IPFS:
+        <span>
+          Play Protect enables artists to store their music securely on IPFS:
+        </span>
         <ol className="List__Content">
           <li>
             Artists can upload encrypted music files to IPFS using the

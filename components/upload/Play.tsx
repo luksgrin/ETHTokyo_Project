@@ -39,7 +39,7 @@ const Home: NextPage = () => {
           <span className="Title__Song">Play Song</span>
         </h1>
         <p className="Text__Content">
-          Experience seamless music streaming with Play Protect:{" "}
+          <span>Experience seamless music streaming with Play Protect: </span>
           <ol className="List__Content">
             <li>Fans sign a message to authenticate their address.</li>
             <li>
