@@ -2,7 +2,7 @@
 
 ![header](./media/repo-header.png)
 
-Play Protect is a tool that empowers artists by giving them the ability of enforce digital rights management for their music, in a decentralized manner, using threshold encryption.
+Play Protect is a tool that empowers artists by giving them the ability of enforcing digital rights management for their music, in a decentralized manner, using threshold encryption.
 
 
 *(This project was build during [ETH Tokyo Hackathon](https://ethglobal.com/events/tokyo) from April 14 to April 16, 2023)*
