@@ -1,10 +1,10 @@
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import HeroImage from "../components/hero-image/hero";
 import Upload from "../components/upload/Upload";
 import Play from "../components/upload/Play";
+import How from "../components/hero-image/how.gif";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -57,7 +57,17 @@ const Home: NextPage = () => {
             IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
           </p>
           <p className="Image__Content">
-            <img alt="some use cases image"></img>
+            <img src="/images/how.gif" alt="How is this done" />
+          </p>
+
+          <p className="Text__Content">
+            How this works at the end explained with LOREM IPSUM LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM
+            IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+          </p>
+
+          <p className="Image__Content">
+            <img src="/images/explanation.png" alt="Diagram" />
           </p>
         </div>
       </main>

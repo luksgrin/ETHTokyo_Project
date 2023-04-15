@@ -1,6 +1,5 @@
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+// import { ConnectButton } from "@rainbow-me/rainbowkit";
 import type { NextPage } from "next";
-import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import DragAndDropUpload from "../../components/upload/DragAndDropUpload";
 import { useLitClient } from "../../hooks/useLitClient";
@@ -13,7 +12,7 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <ConnectButton />
+      {/* <ConnectButton /> */}
       <h1 className={styles.title}>
         <span className="Title__Song">Upload your Song</span>
       </h1>
