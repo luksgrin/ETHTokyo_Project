@@ -37,6 +37,7 @@ p {
   padding-top: 1.5rem;
   align-items: center !important;
   justify-content: center !important;
+  margin-left: -42px;
 }
 
 .text-white h4 {
@@ -140,7 +141,8 @@ main {
 }
 
 .Audio__Container {
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
+  padding-bottom: 1.7rem;
   border-radius: 12px;
   /* border: 1px solid #ccc; */
   min-width: 60%;
