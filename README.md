@@ -42,6 +42,8 @@ Those conditions may be either on-chain or off-chain. Some examples include gran
 
 This technology empowers artists to distribute their work in a more sovereign and independent way, reducing their reliance on centralized platforms and allowing them to maintain control over their creative output.
 
+> [Link for the presentation slides](https://docs.google.com/presentation/d/1Eur9VfmrnEYFwrkXFDXmE9vJj_11cL7N8hl6kLQpmgk/edit?usp=sharing)
+
 # **Run the app locally**
 
 To run our frontend at `localhost:3000`, first clone the repo
