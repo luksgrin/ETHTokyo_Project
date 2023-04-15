@@ -19,11 +19,13 @@ const Home: NextPage = () => {
       <HeroImage></HeroImage>
       <main className={styles.main}>
         <div className="Content Content__1">
-          <h1 className={styles.title}>Welcome to Play Protect</h1>
-
-          <p className={styles.description}>
-            {/* Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code> */}
+          <h1 className={styles.title}>
+            <span className="Title__Song">Welcome to Play Protect</span>
+          </h1>
+          <p className="Text__Content">
+            So we do 2 things, basically + all the logic behidn LOREM IPSUM
+            LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM
+            IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
           </p>
 
           <div className={styles.grid + " MainPage__Grid"}>

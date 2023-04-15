@@ -195,6 +195,11 @@ main {
   margin: auto;
 }
 
+.Text__Content {
+  text-align: center;
+  margin: 2.5rem 1.5rem;
+}
+
 /* .Content.Content__1 {
   background: rgb(24, 26, 27);
   background: linear-gradient(

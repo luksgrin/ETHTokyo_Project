@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <h1 className={styles.title}>
         <span className="Title__Song">Upload your Song</span>
       </h1>
-      <p className="Text__Song">
+      <p className="Text__Content">
         Upload your song to IPFS LOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM
         IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM LOREM
         IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM IPSUM

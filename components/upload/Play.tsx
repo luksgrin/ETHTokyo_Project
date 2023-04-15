@@ -38,7 +38,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           <span className="Title__Song">Play Song</span>
         </h1>
-        <p className="Text__Song">
+        <p className="Text__Content">
           Try our amazing song stored at IPFS which only some amazing owners can
           hear due to our restrictions (Text for testing and therefore being
           able to fixe heights and stuff)
