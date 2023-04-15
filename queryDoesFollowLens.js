@@ -1,3 +1,5 @@
+const fetch = require("node-fetch");
+
 const go = async (handle, followerAddress) => {
     const LENS_API_ENDPOINT = "https://api.lens.dev/graphql";
     try {
@@ -54,3 +56,8 @@ const go = async (handle, followerAddress) => {
     }
     return false;
 };
+
+(async () => {
+    console.log(await go("vitalik.lens", 
+    "0xcbc9dd04153508782b444e3255a9663e9a9953ca"))
+})()
